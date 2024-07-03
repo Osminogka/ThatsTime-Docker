@@ -45,11 +45,11 @@ export default defineConfig({
         host: '0.0.0.0',
         proxy: {
             '^/api': {
-                target: 'https://localhost:5000',
+                target: 'http://localhost:5001',
                 secure: false
             }
         },
-        port: 443,
+        port: 3000,
         // https: {
         //     key: fs.readFileSync(keyFilePath),
         //     cert: fs.readFileSync(certFilePath),

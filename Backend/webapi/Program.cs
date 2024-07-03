@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.EntityFrameworkCore.Sqlite;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 using webapi.DL.Repositories;
 
@@ -18,26 +19,25 @@ builder.Services.AddTransient<IGetUsername, GetUsername>();
 builder.Services.AddTransient<IUsersRepository, UsersRepository>();
 
 //Database setup
-string ThatsTimeData = string.Empty;
-string Accounts = string.Empty;
+
 
 if (builder.Environment.IsDevelopment())
 {
     builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.Development.json");
-    ThatsTimeData = builder.Configuration.GetConnectionString("DataConnection");
-    Accounts = builder.Configuration.GetConnectionString("IdentityConnection");
+    builder.Services.AddDbContext<IdentityContext>(opts =>
+        opts.UseSqlite(builder.Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("webapi")));
+
+    builder.Services.AddDbContext<DataContext>(opts =>
+        opts.UseSqlite(builder.Configuration.GetConnectionString("DataConnection"), b => b.MigrationsAssembly("webapi")));
 }
 else
 {
-    ThatsTimeData = builder.Configuration.GetConnectionString("DataConnection");
-    Accounts = builder.Configuration.GetConnectionString("IdentityConnection");
+    builder.Services.AddDbContext<IdentityContext>(opts =>
+        opts.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("webapi")));
+
+    builder.Services.AddDbContext<DataContext>(opts =>
+        opts.UseSqlServer(builder.Configuration.GetConnectionString("DataConnection"), b => b.MigrationsAssembly("webapi")));
 }
-
-builder.Services.AddDbContext<IdentityContext>(opts =>
-    opts.UseSqlServer(Accounts, b => b.MigrationsAssembly("webapi")));
-
-builder.Services.AddDbContext<DataContext>(opts =>
-    opts.UseSqlServer(ThatsTimeData, b => b.MigrationsAssembly("webapi")));
 
 //User account configs
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<IdentityContext>();
@@ -93,21 +93,25 @@ var app = builder.Build();
 
 //app.UseHttpsRedirection();
 
-app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseRouting();
 app.MapControllers();
 
 app.UseDefaultFiles();
 app.UseSpaStaticFiles();
 
-app.UseSpa(spa =>
+app.MapWhen(x => !x.Request.Path.Value.StartsWith("/api"), builder =>
 {
-    spa.Options.SourcePath = "wwwroot";
-    if (app.Environment.IsDevelopment())
+    builder.UseSpa(spa =>
     {
-        spa.UseProxyToSpaDevelopmentServer("http://localhost:3000");
-    }
+        spa.Options.SourcePath = "wwwroot";
+        if (app.Environment.IsDevelopment())
+        {
+            spa.UseProxyToSpaDevelopmentServer("http://localhost:3000/");
+        }
+    });
 });
 
 var scope = app.Services.CreateScope();

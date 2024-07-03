@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj": {}
+    "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi/webapi.csproj": {}
   },
   "projects": {
-    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
+    "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj",
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj",
         "projectName": "webapi.DAL",
-        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj",
         "packagesPath": "/home/osminogka/.nuget/packages/",
-        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/obj/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/osminogka/.nuget/NuGet/NuGet.Config"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -67,18 +72,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj": {
+    "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DL/webapi.DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj",
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DL/webapi.DL.csproj",
         "projectName": "webapi.DL",
-        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DL/webapi.DL.csproj",
         "packagesPath": "/home/osminogka/.nuget/packages/",
-        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/obj/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/osminogka/.nuget/NuGet/NuGet.Config"
@@ -93,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
-                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj"
+              "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj"
               }
             }
           }
@@ -103,6 +108,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -112,6 +122,10 @@
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             }
           },
           "imports": [
@@ -130,18 +144,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj": {
+    "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi/webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj",
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi/webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi/webapi.csproj",
         "packagesPath": "/home/osminogka/.nuget/packages/",
-        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/obj/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/osminogka/.nuget/NuGet/NuGet.Config"
@@ -156,11 +170,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
-                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj"
+              "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj"
               },
-              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj": {
-                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj"
+              "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DL/webapi.DL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DL/webapi.DL.csproj"
               }
             }
           }
@@ -169,6 +183,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -196,6 +215,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -235,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "To1uMbduX+zHtE9xoQQ1m5ffKKfq2yjNy/8rqUlk/dFCFtYyWbXxe1KaRH/rywzwyt0OjKieznqqiUM6jk8HvA==",
+  "dgSpecHash": "CNxxI/q4WBw=",
   "success": true,
-  "projectFilePath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj",
+  "projectFilePath": "/home/osminogka/Desktop/Programming/ThatsTime-Docker/Backend/webapi.DAL/webapi.DAL.csproj",
   "expectedPackageFiles": [
     "/home/osminogka/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/home/osminogka/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

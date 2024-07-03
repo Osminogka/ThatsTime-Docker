@@ -1,1 +1,2 @@
 /home/osminogka/Desktop/Programming/ThatsTime/vueapp/obj/Debug/vueapp.esproj.CoreCompileInputs.cache
+/home/osminogka/Desktop/Programming/ThatsTime-Docker/Frontend/obj/Debug/vueapp.esproj.CoreCompileInputs.cache

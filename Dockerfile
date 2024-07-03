@@ -11,7 +11,6 @@ RUN npm run build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
-COPY Backend/*.sln ./
 COPY Backend/webapi/*.csproj ./webapi/
 COPY Backend/webapi.DAL/*.csproj ./webapi.DAL/
 COPY Backend/webapi.DL/*.csproj ./webapi.DL/
