@@ -1,0 +1,46 @@
+.header-text{
+    font-family: 'Brush Script MT', cursive;
+    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: 3px 4px 0px rgba(0,0,0,0.3);
+}
+  
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    height: 20%;
+}
+
+.show-nav-button {
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: url('../svg/Header/sidebarbutton.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: 1em;
+    transition: transform 0.3s ease;
+    --rotation: 0deg;
+    transform: rotate(var(--rotation, 0deg));
+}
+
+.profile-box{
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+}

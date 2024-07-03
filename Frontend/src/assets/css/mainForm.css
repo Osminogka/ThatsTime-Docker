@@ -1,0 +1,146 @@
+.form-for-record{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1em;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background-color: #AFFFF5;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5em;
+}
+
+.checkbox-container-time{
+    margin-top: 0.5em;
+}
+
+.input-checkbox
+{
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+    border-width: 2px;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    background-color: #55FFEF;
+}
+
+.label-checkbox
+{
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+
+.input-checkbox-checked
+{
+    background-image: url('../svg/MainForm/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-form, .textarea-form {
+    display: block;
+    background-color: #55FFEF;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    padding: 0.5em;
+}
+
+.input-form:hover, .textarea-form:hover {
+    background-color: #01EED6;
+}
+
+.textarea-form{
+    border-width: 0.2em;
+}
+
+.input-record-content{
+    width: 15em;
+    height: 10em;
+    overflow-y: auto;
+    resize: none;
+}
+
+.p-selected-day{
+    font-weight: bolder;
+    font-family: 'Tahoma';
+}
+
+.showTimeEnter-enter-active{
+    animation: showTimeEnter 0.3s ease-out;
+}
+
+.showTimeEnter-leave-active{
+    animation: showTimeEnter 0.3s reverse;
+}
+
+@keyframes showTimeEnter {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.submit-button{
+    margin-top: 1em;
+    background-color: #55FFEF;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    padding: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: #01EED6;
+}
+
+.error-message{
+    color: black;
+    background-image: url('../svg/MainForm/error.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #AFFFF5;
+    padding-left: 1.5em;
+}
+
+.error-input{
+    border-color: red;
+}
+
+.custom-label{
+    font-weight: bold;
+}
+
+.creation-status{
+    border-style: solid;
+    border-width: 0.3em;
+    border-radius: 0.5em;
+    padding: 5px;
+}
+
+.creation-failed{
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(252, 134, 134);
+}
+
+.creation-successful{
+    border-color: green;
+    background-color: rgb(9, 197, 9);
+}

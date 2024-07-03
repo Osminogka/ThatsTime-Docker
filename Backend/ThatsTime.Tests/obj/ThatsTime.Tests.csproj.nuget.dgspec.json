@@ -1,0 +1,328 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/ThatsTime.Tests/ThatsTime.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/ThatsTime.Tests/ThatsTime.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/ThatsTime.Tests/ThatsTime.Tests.csproj",
+        "projectName": "ThatsTime.Tests",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/ThatsTime.Tests/ThatsTime.Tests.csproj",
+        "packagesPath": "/home/osminogka/.nuget/packages/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/ThatsTime.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/osminogka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj"
+              },
+              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj"
+              },
+              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj",
+        "projectName": "webapi.DAL",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj",
+        "packagesPath": "/home/osminogka/.nuget/packages/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/osminogka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj",
+        "projectName": "webapi.DL",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj",
+        "packagesPath": "/home/osminogka/.nuget/packages/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/osminogka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj",
+        "projectName": "webapi",
+        "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/webapi.csproj",
+        "packagesPath": "/home/osminogka/.nuget/packages/",
+        "outputPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/osminogka/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DAL/webapi.DAL.csproj"
+              },
+              "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj": {
+                "projectPath": "/home/osminogka/Desktop/Programming/ThatsTime/Backend/webapi.DL/webapi.DL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[2.16.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/osminogka/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

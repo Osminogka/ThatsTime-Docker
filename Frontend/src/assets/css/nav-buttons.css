@@ -1,0 +1,75 @@
+.button-accept{
+    background-image: url('../svg/Sidebar/accept.svg');
+    background-color: white;
+    height: 2em;
+    width: 2em;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.button-accept:hover {
+    opacity: 0.8;
+}
+
+.custom-button{
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* Optional focus effect */
+.button-accept:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.button-decline{
+    background-image: url('../svg/Sidebar/decline.svg');
+    background-color: white;
+    height: 2em;
+    width: 2em;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.button-decline:hover {
+    opacity: 0.8;
+}
+
+/* Optional focus effect */
+.button-decline:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.button-nav{
+    background-image: url('../svg/Sidebar/message.svg');
+    background-color: white;
+    height: 2em;
+    width: 2em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.add-button{
+    display: inline-block;
+    height: 2em;
+    width: 2em;    
+    background-color: #03f7ff;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.add-friend-button{
+    background-image: url('../svg/Sidebar/addfriend.svg');
+}
+
+.add-group-button{
+    background-image: url('../svg/Sidebar/addgroup.svg');
+}
+
+@media(max-width: 900px){
+    .expend-info{
+        height: 2em;
+        width: 2em;
+    }   
+}

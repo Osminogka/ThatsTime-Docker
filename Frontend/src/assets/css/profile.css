@@ -1,0 +1,75 @@
+.container-user {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user-basic-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    border-right: 1px solid #e0e0e0;
+    width: auto;
+}
+
+.user-info-list{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    width: 70%;
+    --background-color: white;
+}
+
+.main-profile-div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content:stretch;
+    margin: 10px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 10px;
+    font-size: 1.2em;
+    padding-right: 10px;
+    max-height: 250px;
+    margin-right: 50px;
+    overflow-y: auto;
+}
+
+.entity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #e0e0e0;
+    width: 90%;
+}
+
+.delete-button{
+    background-image: url('../svg/Profile/bin.svg');
+    background-color: white;
+    height: 2em;
+    width: 2em;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.custom-button{
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+@media screen and (max-width: 600px){
+    .user-info-list{
+        width: 100%;
+    }
+}
