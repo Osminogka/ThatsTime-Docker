@@ -6,6 +6,8 @@ services:
     environment:
       SA_PASSWORD: qUgeyvYnOKyMy9HRpGMauKlJdsyq1QdIJUtp8Hz6HarKKCIiVm7m3ITHsBFQSMkEcrGXQy4FNHFX6zKq5NTzysbE0EVJnh3HZwl6DkAloQu7GQ1NZVVNnYEFpkAcxdun
       ACCEPT_EULA: "Y"
+    volumes:
+      - mssql_data:/var/opt/mssql
 
   thatstime-api:
     image: thatstime-api
@@ -24,3 +26,7 @@ services:
       - "8081:443"
     depends_on:
       - db
+
+volumes:
+  mssql_data:
+    driver: local

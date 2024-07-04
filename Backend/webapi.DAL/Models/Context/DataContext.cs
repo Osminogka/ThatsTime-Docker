@@ -17,29 +17,6 @@ namespace webapi.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<MemberRole>().HasData(
-                new MemberRole
-                {
-                    Id = 1,
-                    RoleName = "Undefined"
-                },
-                new MemberRole
-                {
-                    Id = 2,
-                    RoleName = "Creator"
-                },
-                new MemberRole
-                {
-                    Id = 3,
-                    RoleName = "Moderator"
-                },
-                new MemberRole
-                {
-                    Id = 4,
-                    RoleName = "Member"
-                }
-            );
-
             //Set value types
             modelBuilder.Entity<Record>()
                 .Property(e => e.RecordContent).HasColumnType("nvarchar(500)");
